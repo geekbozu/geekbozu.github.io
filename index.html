@@ -1,0 +1,40 @@
+---
+layout: default
+title: Dreams Of A Geek
+nolink: 1
+---
+
+<div class="home">
+
+  <h1>Posts</h1>
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+       {% if post.RedirectTo %}
+
+         {% assign redirectid = post.RedirectTo %}
+         
+         {% for post1 in site.posts %}
+            {% if post1.ProjectID == redirectid %}
+            
+              {% capture projecturl %}{{ post1.url | prepend: site.baseurl }}{% endcapture %}
+              {% break %}
+              
+            {% endif %}
+         {% endfor %}
+       {% else %}
+       {% capture projecturl %}{{ post.url | prepend: site.baseurl }}{% endcapture %}
+       {% endif %} 
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ projecturl }}">{{ post.title }}</a>
+       
+        {{ post.excerpt }}
+        
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

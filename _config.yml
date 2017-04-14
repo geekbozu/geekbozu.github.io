@@ -1,0 +1,16 @@
+# Site settings
+title: Dreams Of A Geek
+email: geekboy1011 at gmail dot com
+description: "Insane ramblings of a lucid dreamer, programmer, calculator hacker, and hardware engineer"
+baseurl: ""
+url: "http://blog.keepdream.in"
+destination: /var/www/blog.keepdream.in/
+timezone: America/New_York
+bitbucket: Geekboy1011
+twitter: Geekbozu
+Cemetech: Geekboy1011
+Omnimaga: Geekboy1011
+gems: []
+# Build settings
+markdown: kramdown
+permalink: pretty

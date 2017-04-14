@@ -1,0 +1,24 @@
+---
+layout: default
+title: Projects
+list: yes
+permalink: /Projects/
+---
+
+<div class="post">
+
+  <article class="post-content">
+  <p>A list of my currently Active Projects</p>
+  </article>
+   <ul class="posts">
+    {% for post in site.categories.projects %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </br>
+        {{ post.excerpt }}
+      </li>
+    {% endfor %}
+  </ul>
+  
+</div>

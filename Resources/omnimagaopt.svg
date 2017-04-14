@@ -1,0 +1,16 @@
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" height="16px" width="16px" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs></defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <rect height="10.004" width="2.9961" y="2.9688" x="0.011719" fill="#06003b"/>
+ <path fill-rule="nonzero" fill="#06003b" d="m9.9915,8.0143,0-4.9884l-0.1381-0.0277c-0.076-0.0152-1.6471-0.0276-3.4914-0.0276h-3.3532l-0.0005-1.2927c-0.0002-0.71094-0.0128-1.3672-0.0279-1.4584l-0.027393-0.16573h6.5023,6.5023v1.4805,1.4805h-1.4805-1.4805v4.9939,4.9939h-1.5026-1.5026v-4.9884z"/>
+ <path fill="#06003b" d="m3.0141,14.453,0-1.4805,3.4913,0,3.4913,0,0,1.4805,0,1.4805-3.4913,0-3.4913,0,0-1.4805z"/>
+</svg>

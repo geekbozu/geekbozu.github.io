@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="post">
+
+  <article class="post-content">
+  {{ content }}
+  </article>
+  {% assign dowehaveposts = false %}
+  {% for post in site.posts %}
+        {% if post.tags contains page.related %}  
+           {% assign dowehaveposts = true %}
+        {% endif  %}
+  {% endfor %}
+  
+  {% if dowehaveposts %}
+  <p>Related Posts</p>
+  {% endif %}
+  
+   <ul>
+     
+    {% for post in site.posts %}
+        {% if post.tags contains page.related %}            
+    <li>    
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </li>
+    {% endif %}
+  {% endfor %}
+  
+  </ul>
+</div>
