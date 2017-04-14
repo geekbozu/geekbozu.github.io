@@ -6,14 +6,27 @@ layout: default
   <article class="post-content">
   {{ content }}
   </article>
+  {% assign dowehaveposts = false %}
+  {% for post in site.posts %}
+        {% if post.tags contains page.related %}  
+           {% assign dowehaveposts = true %}
+        {% endif  %}
+  {% endfor %}
+  
+  {% if dowehaveposts %}
   <p>Related Posts</p>
-  <ul>
-    {% for post in site.post.SilverLinkClone %}
+  {% endif %}
+  
+   <ul>
+     
+    {% for post in site.posts %}
+        {% if post.tags contains page.related %}            
     <li>    
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </li>
-    {% endfor %}
+    {% endif %}
+  {% endfor %}
   
   </ul>
 </div>
