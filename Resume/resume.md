@@ -5,7 +5,7 @@ list: yes
 permalink: /resume/
 ---
 
-##Timothy Keller
+## Timothy Keller
 
 PO Box 305, 23 whitfield place Mount Tabor, NJ 07878
 
